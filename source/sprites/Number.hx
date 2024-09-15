@@ -17,7 +17,7 @@ class Number extends FlxText
 		// color = FlxColor.BLACK; (Was just testing placing sys)
 		color = FlxColor.fromRGB(FlxG.random.int(10, 240), FlxG.random.int(10, 240), FlxG.random.int(10, 240)); // Prevent full white and prevent full black.
 		text = Std.string(curNumber);
-		size = 50;
+		size = 80;
 
 		x = FlxG.mouse.x;
 		y = FlxG.mouse.y;

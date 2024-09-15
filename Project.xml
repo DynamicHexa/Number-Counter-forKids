@@ -4,7 +4,8 @@
 
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Numbers+1" file="NumCount" main="Main" version="0.0.1" company="DynamicHexa" />
+	<app title="Numbers+1" file="NumCount" main="Main" version="0.0.1" company="DynamicHexa" package="com.dynamichexa.numcount" />
+
 
 	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
 		or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"-->
@@ -61,9 +62,9 @@
 	<!--<haxedef name="FLX_NO_NATIVE_CURSOR" />-->
 
 	<!--Optimise inputs, be careful you will get null errors if you don't use conditionals in your game-->
-	<haxedef name="FLX_NO_MOUSE" if="mobile" />
+	<!-- <haxedef name="FLX_NO_MOUSE" if="mobile" />
 	<haxedef name="FLX_NO_KEYBOARD" if="mobile" />
-	<haxedef name="FLX_NO_TOUCH" if="desktop" />
+	<haxedef name="FLX_NO_TOUCH" if="desktop" /> -->
 	<!--<haxedef name="FLX_NO_GAMEPAD" />-->
 
 	<!--Disable the Flixel core sound tray-->
