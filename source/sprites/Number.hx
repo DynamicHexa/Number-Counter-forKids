@@ -1,6 +1,7 @@
 package sprites;
 
 import flixel.FlxG;
+import flixel.sound.FlxSound;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
@@ -12,6 +13,9 @@ class Number extends FlxText
 	public function new(curNumber:Int)
 	{
 		super();
+		var sound = FlxG.sound.play("assets/sounds/pop.ogg");
+		sound.pitch = 0.2 * curNumber;
+		sound.play();
 		trace("Creating number instance with num: " + curNumber);
 		font = "assets/fonts/bubble.ttf";
 		// color = FlxColor.BLACK; (Was just testing placing sys)
