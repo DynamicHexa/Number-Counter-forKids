@@ -13,11 +13,12 @@ class Number extends FlxText
 	public function new(curNumber:Int)
 	{
 		super();
-		var sound = FlxG.sound.play("assets/sounds/pop.ogg");
-		sound.pitch = 0.2 * curNumber;
-		sound.play();
+		// var sound = FlxG.sound.play("assets/sounds/pop.ogg");
+		// sound.pitch = 0.2 * curNumber;
+		// sound.play();
 		trace("Creating number instance with num: " + curNumber);
 		font = "assets/fonts/bubble.ttf";
+		antialiasing = true;
 		// color = FlxColor.BLACK; (Was just testing placing sys)
 		color = FlxColor.fromRGB(FlxG.random.int(10, 240), FlxG.random.int(10, 240), FlxG.random.int(10, 240)); // Prevent full white and prevent full black.
 		text = Std.string(curNumber);

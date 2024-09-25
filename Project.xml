@@ -4,7 +4,7 @@
 
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Numbers+1" file="NumCount" main="Main" version="0.0.1" company="DynamicHexa" package="com.dynamichexa.numcount" />
+	<app title="BabySense" file="BabySense" main="Main" version="0.0.1" company="DynamicHexa" package="com.dynamichexa.numcount" />
 
 
 	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file

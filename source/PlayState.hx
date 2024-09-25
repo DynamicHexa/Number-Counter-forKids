@@ -7,6 +7,7 @@ import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import sprites.Number;
+import sprites.NumberCounterText;
 
 class PlayState extends FlxState
 {
@@ -23,10 +24,8 @@ class PlayState extends FlxState
 		bg.makeGraphic(FlxG.width, FlxG.height, FlxColor.WHITE);
 		add(bg);
 
-		title = new FlxText(0, 0, "Number Counter", 50);
-		title.color = FlxColor.BLACK;
+		title = new NumberCounterText();
 		title.screenCenter();
-		title.alpha = 0.4;
 		add(title);
 
 		if (DeveloperStuff.enabled)
@@ -47,10 +46,10 @@ class PlayState extends FlxState
 			devText.text = "CurNum: " + number;
 		}
 
-		if (number > 9) // Just limit the number limit
-		{
-			number = 0;
-		}
+		// if (number > 9) // Just limit the number limit
+		// {
+		// 	number = 0;
+		// }
 
 		if (FlxG.mouse.justPressed)
 		{
